@@ -3,5 +3,5 @@
  */
 
 exports.index = function(req, res) {
-  res.redirect('/getmonni');
+  res.render('index');
 };

@@ -1,14 +1,105 @@
 body {
-  padding: 50px;
   text-align: center;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #FCFCFC;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div {
+  display:block;
+}
+
+#logo {
+  background: url(/images/monni-logo.svg) no-repeat;
+  float: left;
+  display: inline;
+  height: 65px;
+  width: 250px;
+}
+
+#navbar {
+  margin-bottom: 0px;
+}
+
+#splash-text {
+  position:relative;
+  padding-left:100px;
+  color:#ededed;
+}
+
+#splash-wrapper {
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+}
+
+#splash {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center top;
+  top: 0px;
+  left: 0px;
+  -webkit-background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-image: url(/images/main.png);
+  background-color:#000000;
+}
+
+.navbar-default {
+  background-color: #fcfcfc;
+  border-color: #e7e7e7;
+}
+
+.navbar {
+  border-radius: 4px;
+  position: relative;
+  min-height: 65px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+}
+
+.marketing h2 {
+  margin-top: 5px;
 }
 
 .ss-form-container { 
   border: 1px solid #000000;
 }
 
-a {
-  color: #00B7FF;
+.circle-large {
+  border-width: 8px;
+}
+
+.circle {
+  -webkit-box-shadow: 0 2px 4px 2px rgba(0,0,0,0.3),inset 0 5px 5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 2px 4px 2px rgba(0,0,0,0.3),inset 0 5px 5px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 4px 2px rgba(0,0,0,0.3),inset 0 5px 5px rgba(0,0,0,0.5);
+  border: 4px solid #fff;
+}
+
+.circle, .circle-inset, .circle-simple {
+  display: inline-block;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  border-radius: 500px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.top-buffer{
+  margin-top: 40px;
+}
+
+.top-buffer-small{
+  margin-top: 10px;
 }
