@@ -5,8 +5,10 @@
 var express = require('express');
 var routes = require('./routes');
 var getMonni = require('./routes/getmonni');
+var manager = require('./routes/manager');
 var http = require('http');
 var path = require('path');
+
 
 var app = express();
 
@@ -29,6 +31,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/getmonni', getMonni.index);
+app.get('/manager', manager.index);
 
 
 

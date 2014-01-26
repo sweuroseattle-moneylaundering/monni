@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 manager page
+  div(class="table-responsive")
+    table(class="table table-bordered table-hover tablesorter")
+      thead
+        tr
+          th location
+          th machine
+          th loads
+          th revenue
+      tbody
+        each m in machines
+          tr
+            td= m.locName
+            td= m.name
+            td= m.loads
+            td= m.revenue
+
+
