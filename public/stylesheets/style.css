@@ -1,6 +1,12 @@
 body {
   padding: 50px;
+  text-align: center;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #FCFCFC;
+}
+
+.ss-form-container { 
+  border: 1px solid #000000;
 }
 
 a {
